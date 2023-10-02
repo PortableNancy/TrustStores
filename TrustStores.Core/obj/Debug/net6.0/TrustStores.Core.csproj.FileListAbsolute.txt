@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\bin\Debug\net6.0\TrustStores.Core.deps.json
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\bin\Debug\net6.0\TrustStores.Core.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\bin\Debug\net6.0\TrustStores.Core.pdb
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.AssemblyInfo.cs
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\refint\TrustStores.Core.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\TrustStores.Core.pdb
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStores.Core\obj\Debug\net6.0\ref\TrustStores.Core.dll

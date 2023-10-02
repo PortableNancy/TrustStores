@@ -1,0 +1,17 @@
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\bin\Debug\net6.0\TrustStores.Infrastructure.deps.json
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\bin\Debug\net6.0\TrustStores.Infrastructure.runtimeconfig.json
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\bin\Debug\net6.0\TrustStores.Infrastructure.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\bin\Debug\net6.0\TrustStores.Infrastructure.pdb
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\bin\Debug\net6.0\TrustStores.Core.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\bin\Debug\net6.0\TrustStores.Core.pdb
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.csproj.CopyComplete
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\refint\TrustStores.Infrastructure.dll
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.pdb
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\TrustStores.Infrastructure.genruntimeconfig.cache
+C:\Users\HP\source\repos\NewRepo\TrustStores.API\TrustStore.Infrastructure\obj\Debug\net6.0\ref\TrustStores.Infrastructure.dll

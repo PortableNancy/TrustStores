@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VJ8imKDpb8/YOKv+FxrIx9b6J3je6YIt3aRBwLI4ccg=",
+  "Source": "TrustStores.API",
+  "BasePath": "_content/TrustStores.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
