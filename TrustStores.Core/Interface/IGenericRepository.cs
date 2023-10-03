@@ -9,9 +9,10 @@ namespace TrustStores.Core.Interface
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task InsertAsync(T entity);
-        Task DeleteAsync(string id);
+        Task Add(T entity);
+        Task DeleteAsync(int Id);
         void Update(T item);
-        Task<T> Get(Expression<Func<T, bool>> expression, List<string> includes = null);
+        Task<T> GetById(int Id);
+        Task<IEnumerable<T>> GetAll();
     }
 }

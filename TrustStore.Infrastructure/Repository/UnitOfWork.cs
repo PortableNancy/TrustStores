@@ -10,16 +10,36 @@ using TrustStores.Infrastructure.Datastore;
 
 namespace TrustStores.Infrastructure.Repository
 {
-    public class UnitOfWork: IUnitofWork
+    public class UnitOfWork : IUnitofWork
     {
-        private readonly TrustStoreDbContext _db;
-        private IGenericRepository<Product> _productRepository; 
+        private readonly TrustStoreDbContext _dbContext;
+        public IProduct Products { get; }
 
-        public UnitOfWork(TrustStoreDbContext context)
+        public UnitOfWork(TrustStoreDbContext dbContext,
+                            IProduct productRepository)
         {
-            _db = context;
-                
+            _dbContext = dbContext;
+            Products = productRepository;
         }
-        public IGenericRepository<Product> ProductRepository => _productRepository ?? new GenericRepository<Product>(_db);
+
+        public int Save()
+        {
+            return _dbContext.SaveChanges();
+            
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _dbContext.Dispose();
+            }
+
+        }
     }
 }

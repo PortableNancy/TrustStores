@@ -2,10 +2,12 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace TrustStores.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class unity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,8 +20,7 @@ namespace TrustStores.Infrastructure.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "Precision(18, 2)", nullable: false)
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,8 +29,13 @@ namespace TrustStores.Infrastructure.Migrations
 
             migrationBuilder.InsertData(
                 table: "products",
-                columns: new[] { "Id", "Category", "Description", "Name", "Price" },
-                values: new object[] { 1, "Luxury goods", "A luxury brand of bag", "Gucci Bag", 19999.99m });
+                columns: new[] { "Id", "Category", "Description", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Luxury goods", "A luxury brand of bag", "Gucci Bag" },
+                    { 2, "Gadgets", "A portable headphone", "AirPod 3" },
+                    { 3, "Shoe", "A comfortable branded shoe", "Nike Sneakers" }
+                });
         }
 
         /// <inheritdoc />

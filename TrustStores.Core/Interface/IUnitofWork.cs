@@ -9,7 +9,7 @@ namespace TrustStores.Core.Interface
 {
     public  interface IUnitofWork : IDisposable
     {
-        IProductRepository Products { get; }
+        IProduct Products { get; }
 
         int Save();
     }

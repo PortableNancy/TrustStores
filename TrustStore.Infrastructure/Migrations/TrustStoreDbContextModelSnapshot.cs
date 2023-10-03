@@ -41,9 +41,6 @@ namespace TrustStores.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("Precision(18, 2)");
-
                     b.HasKey("Id");
 
                     b.ToTable("products");
@@ -54,8 +51,21 @@ namespace TrustStores.Infrastructure.Migrations
                             Id = 1,
                             Category = "Luxury goods",
                             Description = "A luxury brand of bag",
-                            Name = "Gucci Bag",
-                            Price = 19999.99m
+                            Name = "Gucci Bag"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Category = "Gadgets",
+                            Description = "A portable headphone",
+                            Name = "AirPod 3"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Category = "Shoe",
+                            Description = "A comfortable branded shoe",
+                            Name = "Nike Sneakers"
                         });
                 });
 #pragma warning restore 612, 618

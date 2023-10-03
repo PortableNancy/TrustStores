@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "ongAbSGgeY2byl1NJK5A371/2ohnx1SklOUdlWUeZgyW77ssFR/JjncMBMZn0CyTxF0+94CW8GkwUvl0DwuDgg==",
+  "dgSpecHash": "w8jlx2FCXZaJkjgqh8bPyh+xdkAygy4p9oCeJA7Vi9YF3s1gf1kBoGAZjrrBMNtKgG67Tx4TLldfJC4S5jaMOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\NewRepo\\TrustStores.API\\TrustStores.Core\\TrustStores.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

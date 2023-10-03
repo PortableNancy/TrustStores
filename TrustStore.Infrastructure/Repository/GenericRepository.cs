@@ -10,7 +10,7 @@ using TrustStores.Infrastructure.Datastore;
 
 namespace TrustStores.Infrastructure.Repository
 {
-    public class GenericRepository<T> : GenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly TrustStoreDbContext _dbContext;
         private readonly DbSet<T> _dbSet;
@@ -20,12 +20,12 @@ namespace TrustStores.Infrastructure.Repository
             _dbSet = _dbContext.Set<T>();
         }
 
-        public async Task InsertAsync(T entity)
+        public async Task Add(T entity)
         {
-            _dbSet.AddAsync(entity);
+            await _dbContext.Set<T>().AddAsync(entity);
         }
 
-        public async Task DeleteAsync(string Id)
+        public async Task DeleteAsync(int Id)
         {
             _dbSet.Remove(await _dbSet.FindAsync(Id));
         }
@@ -35,43 +35,17 @@ namespace TrustStores.Infrastructure.Repository
             _dbSet.Update(item);
         }
 
-        public async Task<T> Get(Expression<Func<T, bool>> expression, List<string> includes = null)
+        public async Task<T> GetById(int id)
         {
-            IQueryable<T> query = _dbSet;
-            if (includes != null)
-            {
-                foreach (var include in includes)
-                    query = query.Include(include);
-            }
-            try
-            {
-                return await query.AsNoTracking().FirstOrDefaultAsync(expression);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-
+            return await _dbContext.Set<T>().FindAsync(id);
         }
 
-        public async Task<IList<T>> GetAllAsync(Expression<Func<T, bool>> expression = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<string> includes = null)
+        public async Task<IEnumerable<T>> GetAll()
         {
-            IQueryable<T> query = _dbSet;
-
-            if (expression != null)
-            {
-                query = query.Where(expression);
-            }
-            if (includes != null)
-            {
-                foreach (var include in includes)
-                    query = query.Include(include);
-            }
-            if (orderBy != null)
-            {
-                query = orderBy(query);
-            }
-            return await query.AsNoTracking().ToListAsync();
-
+            return await _dbContext.Set<T>().ToListAsync();
         }
+
+    }
+
+       
     }
